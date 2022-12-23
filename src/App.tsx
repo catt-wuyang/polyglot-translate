@@ -1,22 +1,30 @@
-import React, { useState } from "react";
-import { type Locale, translate, initTranslation } from "./utils/translate";
+import React, { useEffect, useState } from "react";
+import {
+  type Locale,
+  translate,
+  initTranslation,
+  POLYGLOT_STORAGE_NAME,
+} from "./utils/translate";
 
 const App: React.FC<{ language: string }> = ({ language }) => {
   const [locale, setLocale] = useState(language);
 
   initTranslation(locale);
 
+  useEffect(() => {
+    localStorage.setItem(POLYGLOT_STORAGE_NAME, locale);
+  }, [locale]);
+
+  const onSelectLocale = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const targetLocale = e.currentTarget.value as Locale;
+    setLocale(targetLocale);
+  };
+
   return (
     <div className="App">
       <div className="layout-content">
         <div className="i18n-toggle">
-          <select
-            value={locale}
-            onChange={(e) => {
-              const nLocale = e.currentTarget.value as Locale;
-              setLocale(nLocale);
-            }}
-          >
+          <select value={locale} onChange={(e) => onSelectLocale(e)}>
             <option value="zh">zh</option>
             <option value="en">en</option>
           </select>
