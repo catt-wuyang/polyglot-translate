@@ -1,0 +1,20 @@
+{
+  "en": {
+    "wiki.i18n_name": "Internationalization and localization",
+    "wiki.i18n_definition1": "In computing, internationalization and localization, often abbreviated i18n and L10n,are means of adapting computer software to different languages, regional peculiarities and technical requirements of a target locale.",
+    "wiki.i18n_definition2": "Internationalization is the process of designing a software application so that it can be adapted to various languages and regions without engineering changes. Localization is the process of adapting internationalized software for a specific region or language by translating text and adding locale-specific components.",
+    "wiki.i18n_definition3": "The terms are frequently abbreviated to the numeronyms i18n (where 18 stands for the number of letters between the first i and the last n in the word internationalization, a usage coined at Digital Equipment Corporation in the 1970s or 1980s) and L10n for localization, due to the length of the words.",
+    "wiki.i18n_frontend_library": "Frontend Library",
+    "wiki.i18n_library1": "Node-Polyglot",
+    "wiki.i18n_library2": "React-i18n"
+  },
+  "zh": {
+    "wiki.i18n_name": "国际化和本土化",
+    "wiki.i18n_definition1": "在信息技术领域，国际化与本地化（英文：internationalization and localization）是指修改软件使之能适应目标市场的语言、地区差异以及技术需要。",
+    "wiki.i18n_definition2": "国际化是指在设计软件，将软件与特定语言及地区脱钩的过程。当软件被移植到不同的语言及地区时，软件本身不用做内部工程上的改变或修正。本地化则是指当移植软件时，加上与特定区域设置有关的信息和翻译文件的过程。国际化和本地化之间的区别虽然微妙，但却很重要。国际化意味着产品有适用于任何地方的“潜力”；本地化则是为了更适合于“特定”地方的使用，而另外增添的特色。用一项产品来说，国际化只需做一次，但本地化则要针对不同的区域各做一次。这两者之间是互补的，并且两者合起来才能让一个系统适用于各地。",
+    "wiki.i18n_definition3": "基于他们的英文单字长度过长，常被分别简称成i18n（18意味着在“internationalization”这个单字中，i和n之间有18个字母）及L10n",
+    "wiki.i18n_frontend_library": "前端库",
+    "wiki.i18n_library1": "Node-Polyglot",
+    "wiki.i18n_library2": "React-i18n"
+  }
+}
