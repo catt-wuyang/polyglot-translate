@@ -32,9 +32,25 @@ function getBrowserLanguage() {
   return supportLocale.find((e) => e === language) ?? defLocale;
 }
 
-function getLanguage() {
-  // TODO localstorage get locale
-  return getBrowserLanguage();
+const POLYGLOT_STORAGE_NAME = "polyglot-language";
+
+function getLocalStorageLanguage() {
+  return localStorage.getItem(POLYGLOT_STORAGE_NAME) ?? "";
 }
 
-export { translate, initTranslation, polyglot, getLanguage };
+function getLanguage() {
+  const language = getLocalStorageLanguage();
+
+  if (!language) {
+    return getBrowserLanguage();
+  }
+  return supportLocale.find((e) => e === language) ?? defLocale;
+}
+
+export {
+  translate,
+  initTranslation,
+  polyglot,
+  getLanguage,
+  POLYGLOT_STORAGE_NAME,
+};
