@@ -16,5 +16,14 @@
     "wiki.i18n_frontend_library": "前端库",
     "wiki.i18n_library1": "Node-Polyglot",
     "wiki.i18n_library2": "React-i18n"
+  },
+  "ja": {
+    "wiki.i18n_name": "国際化・ローカライゼーション",
+    "wiki.i18n_definition1": "コンピュータの国際化、ローカライズは、i18n、L10nと略されることが多く、コンピュータソフトウェアを異なる言語、地域特性、対象ロケールの技術要件に適応させる手段である。",
+    "wiki.i18n_definition2": "国際化とは、ソフトウェアアプリケーションを設計し、エンジニアリングの変更なしにさまざまな言語や地域に適応できるようにすることです。ローカリゼーションとは、国際化されたソフトウェアを特定の地域や言語に適応させるために、テキストを翻訳したり、その地域特有のコンポーネントを追加したりするプロセスです。",
+    "wiki.i18n_definition3": "言葉の長さから、i18n（18はinternationalizationの最初のiと最後のnの間の文字数、1970〜80年代のDigital Equipment Corporationの造語）、L10n（localization）と省略されることも多い。",
+    "wiki.i18n_frontend_library": "フロントエンドライブラリ",
+    "wiki.i18n_library1": "Node-Polyglot",
+    "wiki.i18n_library2": "React-i18n"
   }
 }
