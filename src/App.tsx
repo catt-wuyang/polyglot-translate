@@ -25,8 +25,9 @@ const App: React.FC<{ language: string }> = ({ language }) => {
       <div className="layout-content">
         <div className="i18n-toggle">
           <select value={locale} onChange={(e) => onSelectLocale(e)}>
-            <option value="zh">zh</option>
-            <option value="en">en</option>
+            <option value="zh">中文</option>
+            <option value="en">英文</option>
+            <option value="ja">日文</option>
           </select>
         </div>
         <div className="content-block">

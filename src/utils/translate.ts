@@ -1,12 +1,12 @@
 import Polyglot from "node-polyglot";
 import translations from "../languages/i18n.json";
 
-export type Locale = "zh" | "en";
+export type Locale = "en" | "zh" | "ja";
 
 let polyglot: Polyglot | any;
 const defLocale = "en";
 
-const supportLocale = ["zh", "en"];
+const supportLocale = ["en", "zh", "ja"];
 
 const initTranslation = (language: string = defLocale) => {
   const locale = supportLocale.find((e) => e === language) ?? defLocale;
